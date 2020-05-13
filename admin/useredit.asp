@@ -45,7 +45,7 @@ End Select
 <html>
 <head>
 <meta NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
-<link href="../header.css" type="text/css" rel="stylesheet">
+<link href="header.css" type="text/css" rel="stylesheet">
 <script LANGUAGE="javascript">
 <!--
 function Validate()

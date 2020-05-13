@@ -21,7 +21,7 @@ rs.Close
 %>
 <html>
     <head>
-        <link href="../header.css" type="text/css" rel="stylesheet">
+        <link href="header.css" type="text/css" rel="stylesheet">
         <script lanuange="javascript" type="text/javascript">
             function fnAdd()
             {
