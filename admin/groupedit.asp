@@ -32,6 +32,9 @@ Select Case Request.Form("btnSubmit")
 				strSQL = "UPDATE userdata SET class = '" & Request.Form ("txtGroup") & "' " & _
 					"WHERE class = '" & Request.QueryString("group") & "'"
 				%><!--#include file="../includes/rsadd.asp"--><%
+				strSQL = "UPDATE Sponsors SET [Group] = '" & Request.Form ("txtGroup") & "' " & _
+					"WHERE [Group] = '" & Request.QueryString("group") & "'"
+				%><!--#include file="../includes/rsadd.asp"--><%
 			End If
 			%><!--#include file="../includes/DBClose.asp"--><%
 			Response.Redirect("groups.asp")
