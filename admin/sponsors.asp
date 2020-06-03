@@ -293,7 +293,7 @@ function groupChanged(group) {
 			</tr>
 			<tr>
 				<td>
-					Force 
+					Force size (optional)
 				</td>
 				<td colspan=2>
 					Width: <input type="text" style="width: 40px;" id="txtWidth" name="txtWidth" maxlength="4" value="<%=txtWidth%>">px
@@ -304,12 +304,18 @@ function groupChanged(group) {
 				<td>
 					Site (include http): 
 				</td>
-				<td colspan=2> 
+				<td>
 					<input type="text" id="txtSite" name="txtSite" maxlength="255" value="<%=txtSite%>">
-					Description: 
-					<input type="text" id="txtDescription" name="txtDescription" maxlength="255" value="<%=txtDescription%>">
 				</td>
 			</tr> 
+			<tr>
+				<td style="vertical-align: top;">
+					Description: 
+				</td>
+				<td colspan=3> 
+					<textarea id="txtDescription" style="WIDTH: 342px; HEIGHT: 104px" name="txtDescription" rows="5" cols="37"><%=txtDescription%></textarea>
+				</td>
+			</tr>
 			<tr>
 				<td>
 					Contact Name: 

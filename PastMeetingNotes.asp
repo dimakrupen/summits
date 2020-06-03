@@ -124,6 +124,15 @@ function fnIfChecked(elem, id, i, elemDate)
 <input type="hidden" name="id">
 <img src="images/cap_PastMeetingNotesMY.gif">
 <input type="button" name="btnSubmit1" value="Add new" onclick="fnEdit('');" class="tblBase">
+<%
+Dim strGroup
+strGroup = sesClass
+If sesClass <> "" Then
+%>
+<!--#include file="_sponsors.asp"-->
+<%
+End If
+%>
 <table width="100%" style="FONT-SIZE: 10pt;border-spacing: 10px;">
 <%
 strSQL = "SELECT photos.dateadded, photos.filename, photos.description, photos.description2, photos.photoid, photos.userid,  " &_
