@@ -125,7 +125,8 @@ function fnIfChecked(elem, id, i, elemDate)
 <img src="images/cap_PastMeetingNotesMY.gif">
 <input type="button" name="btnSubmit1" value="Add new" onclick="fnEdit('');" class="tblBase">
 <%
-Dim strGroup
+Dim strGroup, showLogoOnly
+showLogoOnly = False
 strGroup = sesClass
 If sesClass <> "" Then
 %>

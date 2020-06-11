@@ -1,0 +1,25 @@
+...
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+...
+
+<div>
+    <iframe id="IframeId" src="http://thesummits.org/ciosummit/sponsorsext.asp?group=omaha" style="width:100%;" onload="setIframeHeight(this)"></iframe>
+</div>
+<br>
+some text...
+<br>
+...
+
+<script type="text/javascript">
+    window.addEventListener('message', function (event) {
+    if (event.data.hasOwnProperty("FrameHeight")) {
+            $("#IframeId").css("height", event.data.FrameHeight);        
+        }
+    });
+
+    function setIframeHeight(ifrm) {
+        var height = ifrm.contentWindow.postMessage("FrameHeight", "*");   
+    }
+</script>        

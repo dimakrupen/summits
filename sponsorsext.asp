@@ -30,8 +30,12 @@ function SQLInject(strWords)
 end function 
 
 
-Dim strGroup
+Dim strGroup, showLogoOnly
+showLogoOnly = False
 strGroup = SQLInject(Request.QueryString("group"))
+If SQLInject(Request.QueryString("logo") = "0") Then
+    showLogoOnly = True
+End If
 %>
 <!--#include file="_sponsors.asp"-->
 </body>
